@@ -1,0 +1,164 @@
+<html>
+
+<head>
+
+  <title></title>
+
+  <style>
+
+    body{
+
+      background-color: #000000;
+
+    }
+
+   .btn-g{
+
+     border:0;
+
+     background-color: royalblue;
+
+     color: white;
+
+     padding: 5px;
+
+     font-weight: bold;
+
+     border-radius: 2px;
+
+   }
+
+    
+
+    #output {
+
+    font-weight: 700;
+
+    border: 1px solid white;
+
+    padding:5px;
+
+        color: #fff;
+
+       font-weight: 800;
+
+    }
+
+    .con1{
+
+      background-color: #000000;
+
+      border: 1px solid white;
+
+      color: #FFFFFF;
+
+      border-radius: 5px;
+
+      text-align: center;
+
+      height: 150px;
+
+      width: 99% ;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="con1">
+
+  <h3>Random Subject Generator</h3>
+
+  <div>
+
+    <button class="btn-g">Generate</button>
+
+  </div>
+
+  <div>
+
+   
+
+  
+
+  <p id="output"></p>
+
+</div>
+
+  <script>
+
+   
+
+    var btn = document.querySelector("button");
+
+    var out = document.getElementById("output");
+
+    
+
+  
+
+    btn.addEventListener("click", getWord);
+
+   
+
+    function getWord(){
+
+     
+
+      
+
+      var theWord= [
+
+        'Science',
+
+        'G.k',
+
+        'Math',
+
+        'English',
+
+        'English Grammar',
+
+        'Computer',
+
+         'Biology',
+
+         'Art',
+
+        'History',
+
+        'Chemistry',
+
+        'Physical education',
+
+        'Music',
+
+        'Drawing',
+
+        'Try Again ! ',
+
+        
+
+      ];
+
+      
+
+      var wordNum = Math.floor(Math.random() * theWord.length);
+
+      
+
+     
+
+      output.textContent = theWord[wordNum];
+
+    }
+
+</script>
+
+</body>
+
+</html>
+
